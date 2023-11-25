@@ -14,6 +14,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 header {
   display: flex;
@@ -95,10 +100,10 @@ header {
   top: 3.25rem;
   right: 1px;
   color: black;
-  width: 25rem;
+  width: 20rem;
   border: 1px solid gray;
   border-radius: 8px;
-  padding: 0.5rem;
+  padding: 0.375rem;
   z-index: 1000;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
@@ -258,6 +263,74 @@ a {
   gap: 0.5rem;
   align-self: stretch;
 }
+
+.plans_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+  border: 1px solid red;
+}
+
+.plans {
+  display: flex;
+  width: 50rem;
+  padding: 0.75rem 0.5rem 0.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: var(--grey-grey-300, #1a1a1a);
+}
+
+.plans p {
+  color: var(--font-light, #e3e3e3);
+  /* Text-13/medium */
+  font-family: Inter;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 1.1375rem */
+}
+
+.plans div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.plans a {
+  display: flex;
+  padding: 0.375rem 0.75rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--White, #fff);
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+  cursor: pointer;
+}
+
+.plans svg {
+  display: flex;
+  padding: 0.375rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.plans_details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50rem;
+  padding: 0.5rem;
+  align-items: flex-end;
+  gap: 1rem;
+  border: 1px solid black;
+}
 @media screen and (max-width: 768px) {
   .mobile_logo {
     display: block;
@@ -271,7 +344,13 @@ a {
   .username h4 {
     display: none;
   }
-  .notification {
+  .notification,
+  .menu {
     width: 20rem;
+  }
+  .plans {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
