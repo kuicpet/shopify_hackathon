@@ -63,15 +63,58 @@ header {
   color: #b5b5b5;
 }
 
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-@media screen and (max-width: 480px) {
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  margin: 0 1rem;
+  background-color: #303030;
+}
+.notification svg {
+  width: 70%;
+}
+.username {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #303030;
+  height: 32px;
+}
+
+h4 {
+  margin: 1rem;
+}
+
+.username span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  color: black;
+  background-color: #36fba1;
+}
+@media screen and (max-width: 768px) {
   .mobile_logo {
     display: block;
   }
   .desktop_logo {
     display: none;
   }
-  .searchbar{
-    width: 70%;
+  .searchbar {
+    width: 90%;
+  }
+  h4 {
+    display: none;
   }
 }
