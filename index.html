@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat&family=Unica+One&display=swap"
+      rel="stylesheet" />
     <title>Shopify - Marchet</title>
   </head>
   <body>
@@ -231,11 +236,45 @@
             </span>
           </div>
         </div>
+        <!--Setup-->
         <div class="plan_details">
-          <h3>Setup guide</h3>
+          <div class="plan_setup">
+            <div class="setup">
+              <h3>Setup guide</h3>
+              <p>
+                Use this personalized guide to get your store up and running.
+              </p>
+              <div class="status">
+                <p>1 / 5 completed</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="4"
+                  viewBox="0 0 72 4"
+                  fill="none">
+                  <rect width="72" height="4" rx="2" fill="#E3E3E3" />
+                  <rect width="18" height="4" fill="#1A1A1A" />
+                </svg>
+              </div>
+            </div>
+            <div class="open_icon" onclick="toggleDropdown()">
+              <svg
+                width="41"
+                height="40"
+                viewBox="0 0 21 20"
+                fill="#4A4A4A"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.21967 8.46967C6.51256 8.17678 6.98744 8.17678 7.28033 8.46967L10.75 11.9393L14.2197 8.46967C14.5126 8.17678 14.9874 8.17678 15.2803 8.46967C15.5732 8.76256 15.5732 9.23744 15.2803 9.53033L11.2803 13.5303C10.9874 13.8232 10.5126 13.8232 10.2197 13.5303L6.21967 9.53033C5.92678 9.23744 5.92678 8.76256 6.21967 8.46967Z"
+                  fill="#4A4A4A" />
+              </svg>
+            </div>
+          </div>
+          <div class="setup_details">Accordion here</div>
         </div>
       </section>
-      <!--Setup-->
     </main>
   </body>
 </html>
