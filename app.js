@@ -7,6 +7,8 @@ let setupDetails = document.querySelector('.setup_details')
 let accordionHeader = document.querySelector('.section_header')
 //let content = document.querySelector('.text')
 let openIcon = document.querySelector('.icon_close')
+let cancelBtn = document.querySelector('.camcel')
+let planDetails = document.querySelector('.plan_details')
 
 const toggleNotis = () => {
   notification.style.display =
@@ -22,12 +24,19 @@ const toggleMenu = () => {
       : 'none'
 }
 
+const toggleCancel = () => {
+  planDetails.style.display =
+    planDetails.style.display === 'none' || planDetails.style.display === ''
+      ? 'block'
+      : 'none'
+}
+
 const toggleDropdown = () => {
   setupDetails.style.display =
     setupDetails.style.display === 'none' || setupDetails.style.display === ''
       ? 'block'
       : 'none'
-   openIcon.classList.toggle('rotate')
+  openIcon.classList.toggle('rotate')
 }
 
 const toggleAccordion = (header) => {
