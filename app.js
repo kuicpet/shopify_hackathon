@@ -4,6 +4,8 @@ let notification = document.querySelector('.notification')
 let menu = document.querySelector('.menu')
 let dropdownBtn = document.querySelector('.open_icon')
 let setupDetails = document.querySelector('.setup_details')
+let accordionHeader = document.querySelector('.section_header')
+//let content = document.querySelector('.text')
 
 const toggleNotis = () => {
   notification.style.display =
@@ -25,3 +27,14 @@ const toggleDropdown = () => {
       ? 'block'
       : 'none'
 }
+
+const toggleAccordion = (header) => {
+  let content = header.nextElementSibling
+  content.classList.toggle('show')
+}
+
+accordionHeader.forEach(function (header) {
+  header.addEventListener('click', function () {
+    toggleAccordion(header)
+  })
+})
