@@ -398,6 +398,40 @@ a {
   gap: 0.125rem;
   align-self: stretch;
 }
+.custom_checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/* Hide default checkbox */
+input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom_cjeckbox .checkbox_icon svg {
+  transition: fill 0.3s;
+}
+
+.custom_checkbox .checked_icon {
+  display: none;
+}
+
+.custom_checkbox input:checked + .checkbox_icon svg {
+  stroke: transparent;
+  display: none;
+}
+
+.custom_checkbox input:checked + .checkbox_icon .checked_icon {
+  display: inline-block;
+}
 
 .setup_details_wrapper {
   display: flex;
