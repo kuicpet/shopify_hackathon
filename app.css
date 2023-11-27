@@ -342,6 +342,16 @@ a {
   flex-direction: column;
   gap: 0.25rem;
 }
+.icon_close {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+.rotate {
+  margin-left: 5px;
+  vertical-align: middle;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
+}
 
 .setup h3 {
   color: var(--font-dark, #303030);
@@ -503,7 +513,8 @@ a {
     align-items: flex-start;
   }
   .plan_details,
-  .plan_setup , .setup_details_wrapper{
+  .plan_setup,
+  .setup_details_wrapper {
     width: 100%;
   }
 }

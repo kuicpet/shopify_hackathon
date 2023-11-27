@@ -6,6 +6,7 @@ let dropdownBtn = document.querySelector('.open_icon')
 let setupDetails = document.querySelector('.setup_details')
 let accordionHeader = document.querySelector('.section_header')
 //let content = document.querySelector('.text')
+let openIcon = document.querySelector('.icon_close')
 
 const toggleNotis = () => {
   notification.style.display =
@@ -26,6 +27,7 @@ const toggleDropdown = () => {
     setupDetails.style.display === 'none' || setupDetails.style.display === ''
       ? 'block'
       : 'none'
+   openIcon.classList.toggle('rotate')
 }
 
 const toggleAccordion = (header) => {
