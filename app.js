@@ -4,7 +4,7 @@ let notification = document.querySelector('.notification')
 let menu = document.querySelector('.menu')
 let dropdownBtn = document.querySelector('.open_icon')
 let setupDetails = document.querySelector('.setup_details')
-let accordionHeader = document.querySelector('.section_header')
+let accordionHeaders = document.querySelectorAll('.section_header')
 //let content = document.querySelector('.text')
 let openIcon = document.querySelector('.icon_close')
 let cancelBtn = document.querySelector('.cancel')
@@ -44,6 +44,12 @@ const toggleDropdown = () => {
 const toggleAccordion = (header) => {
   let content = header.nextElementSibling
   content.classList.toggle('show')
+  // Close other accordions
+  accordionHeaders.forEach((otherHeader) => {
+    if (otherHeader !== header) {
+      otherHeader.nextElementSibling.classList.remove('show')
+    }
+  })
 }
 
 accordionHeader.forEach(function (header) {
