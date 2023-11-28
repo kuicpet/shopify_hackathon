@@ -319,7 +319,11 @@ a {
   box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
   cursor: pointer;
 }
-
+.plans button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
 .plans svg {
   display: flex;
   padding: 0.375rem;
