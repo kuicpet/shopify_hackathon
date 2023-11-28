@@ -265,6 +265,14 @@ a {
   align-self: stretch;
 }
 
+.progress_bar {
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 1px;
+  width: 72px;
+  transition: width 0.3s ease;
+}
+
 .plans_wrapper {
   display: flex;
   flex-direction: column;
@@ -525,6 +533,17 @@ input[type='checkbox'] {
     0px 2px 0px 0px #000;
 }
 
+.add_product {
+  display: flex;
+  align-items: center;
+}
+.add_product span {
+  color: var(--font-dark, #323232);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 0.975rem */
+}
 @media screen and (max-width: 768px) {
   .mobile_logo {
     display: block;

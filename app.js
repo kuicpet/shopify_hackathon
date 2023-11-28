@@ -9,6 +9,8 @@ let accordionHeader = document.querySelector('.section_header')
 let openIcon = document.querySelector('.icon_close')
 let cancelBtn = document.querySelector('.camcel')
 let planDetails = document.querySelector('.plan_details')
+let progressBar = document.querySelector('.progress_bar')
+const checkedSteps = document.querySelectorAll('.step input:checked').length
 
 const toggleNotis = () => {
   notification.style.display =
@@ -49,3 +51,12 @@ accordionHeader.forEach(function (header) {
     toggleAccordion(header)
   })
 })
+
+function stopPropagation(event) {
+  event.stopPropagation()
+}
+
+const updateProgress = (step) => {
+  const progress = (checkedSteps / 5) * 100
+  progressBar.style.width = `${progress}%`
+}

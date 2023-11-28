@@ -255,16 +255,9 @@
                 Use this personalized guide to get your store up and running.
               </p>
               <div class="status">
-                <p>1 / 5 completed</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="72"
-                  height="4"
-                  viewBox="0 0 72 4"
-                  fill="none">
-                  <rect width="72" height="4" rx="2" fill="#E3E3E3" />
-                  <rect width="18" height="4" fill="#1A1A1A" />
-                </svg>
+                <p><span class="steps_completed">0</span> / 5 completed</p>
+
+                <div class="progress_bar"></div>
               </div>
             </div>
             <div class="open_icon" onclick="toggleDropdown()">
@@ -289,7 +282,7 @@
                 <div class="section_header" onclick="toggleAccordion(this)">
                   <div class="custom_checkbox">
                     <label for="">
-                      <input type="checkbox" />
+                      <input type="checkbox" id="step1" />
                       <span class="checkbox_icon">
                         <!-- SVG icon for unchecked state -->
                         <svg
@@ -329,7 +322,7 @@
                       </span>
                     </label>
                   </div>
-                  <h4 >Customise you online store</h4>
+                  <h4 class="header_title">Customise you online store</h4>
                 </div>
                 <div class="text">
                   <div>
@@ -353,7 +346,7 @@
                 <div class="section_header" onclick="toggleAccordion(this)">
                   <div class="custom_checkbox">
                     <label for="">
-                      <input type="checkbox" />
+                      <input type="checkbox" onclick="stopPropagation(event)" />
                       <span class="checkbox_icon">
                         <!-- SVG icon for unchecked state -->
                         <svg
@@ -402,8 +395,10 @@
                       products you plan to sell.
                       <a href="">Learn more</a>
                     </p>
-                    <button>Add product</button>
-                    <span>Import product</span>
+                    <div class="add_product">
+                      <button>Add product</button>
+                      <span>Import product</span>
+                    </div>
                   </div>
                   <div>
                     <img
