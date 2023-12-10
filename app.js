@@ -8,7 +8,7 @@ let accordionHeaders = document.querySelectorAll('.section_header')
 //let content = document.querySelector('.text')
 let openIcon = document.querySelector('.icon_close')
 let cancelBtn = document.querySelector('.cancel')
-let planDetails = document.querySelector('.plan_details')
+let plans = document.querySelector('.plans')
 let progressBar = document.querySelector('.progress_bar')
 const checkedSteps = document.querySelectorAll('.step input:checked').length
 
@@ -27,8 +27,8 @@ const toggleMenu = () => {
 }
 
 const toggleCancel = () => {
-  planDetails.style.display =
-    planDetails.style.display === 'none' || planDetails.style.display === ''
+  plans.style.display =
+    plans.style.display === 'none' || plans.style.display === ''
       ? 'block'
       : 'none'
 }
@@ -52,11 +52,12 @@ const toggleAccordion = (header) => {
   })
 }
 
+/*
 accordionHeader.forEach(function (header) {
   header.addEventListener('click', function () {
     toggleAccordion(header)
   })
-})
+})*/
 
 function stopPropagation(event) {
   event.stopPropagation()
